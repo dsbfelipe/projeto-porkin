@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porkin - Criar Grupo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criar Grupo</h1>
+        <form id="create-group-form">
+            <label for="group-name">Nome do Grupo:</label>
+            <input type="text" id="group-name" required>
+            <label for="group-description">Descrição:</label>
+            <input type="text" id="group-description">
+            <label for="group-members">Membros:</label>
+            <select id="group-members" multiple required>
+                <!-- Contatos pré-definidos serão carregados aqui -->
+            </select>
+            <button type="submit">Criar</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

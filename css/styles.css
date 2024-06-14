@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Estilos gerais */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Formulários */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-weight: 300;
+}
+
+input[type="text"], input[type="number"], select {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Dashboard e Grupo */
+
+#recent-transactions {
+    margin-top: 24px;
+}
+
+.group {
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.group:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.transaction {
+    background-color: #f7f7f7;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-left: 3px solid #007bff;
+    border-radius: 5px;
+}
+
+#group-details {
+    margin-top: 24px;
+}
+
+#group-members-list {
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para as últimas transações */
+
+#recent-transactions {
+    margin-top: 20px;
+}
+
+.transaction {
+    background-color: #f7f7f7;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 3px solid #007bff;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
